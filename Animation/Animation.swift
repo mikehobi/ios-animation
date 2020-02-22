@@ -11,6 +11,7 @@ typealias AnimationBlock = () -> Void
 /// Animation Protocol
 protocol AnimationProtocol {}
 
+/// Animation
 struct Animation: AnimationProtocol {
     var animation: AnimationBlock
     var duration: TimeInterval

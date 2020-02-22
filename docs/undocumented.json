@@ -2,399 +2,392 @@
   "warnings": [
     {
       "file": "/Users/mikehobizal/code/Animation/Animation/Animation.swift",
-      "line": 14,
-      "symbol": "Animation",
-      "symbol_kind": "source.lang.swift.decl.struct",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/mikehobizal/code/Animation/Animation/Animation.swift",
-      "line": 15,
+      "line": 16,
       "symbol": "Animation.animation",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/mikehobizal/code/Animation/Animation/Animation.swift",
-      "line": 16,
+      "line": 17,
       "symbol": "Animation.duration",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/mikehobizal/code/Animation/Animation/Animation.swift",
-      "line": 17,
+      "line": 18,
       "symbol": "Animation.delay",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/mikehobizal/code/Animation/Animation/Animation.swift",
-      "line": 18,
+      "line": 19,
       "symbol": "Animation.easing",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/mikehobizal/code/Animation/Animation/Animation.swift",
-      "line": 50,
+      "line": 51,
       "symbol": "Animation.Sequence",
       "symbol_kind": "source.lang.swift.decl.typealias",
       "warning": "undocumented"
     },
     {
       "file": "/Users/mikehobizal/code/Animation/Animation/Animation.swift",
-      "line": 51,
+      "line": 52,
       "symbol": "Animation.Stagger",
       "symbol_kind": "source.lang.swift.decl.typealias",
       "warning": "undocumented"
     },
     {
       "file": "/Users/mikehobizal/code/Animation/Animation/Animation.swift",
-      "line": 52,
+      "line": 53,
       "symbol": "Animation.Parallel",
       "symbol_kind": "source.lang.swift.decl.typealias",
       "warning": "undocumented"
     },
     {
       "file": "/Users/mikehobizal/code/Animation/Animation/Animation.swift",
-      "line": 53,
+      "line": 54,
       "symbol": "Animation.Wait",
       "symbol_kind": "source.lang.swift.decl.typealias",
       "warning": "undocumented"
     },
     {
       "file": "/Users/mikehobizal/code/Animation/Animation/Animation.swift",
-      "line": 58,
+      "line": 59,
       "symbol": "AnimationWait.duration",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/mikehobizal/code/Animation/Animation/Animation.swift",
-      "line": 70,
+      "line": 71,
       "symbol": "AnimationSequence.animations",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/mikehobizal/code/Animation/Animation/Animation.swift",
-      "line": 71,
+      "line": 72,
       "symbol": "AnimationSequence.delay",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/mikehobizal/code/Animation/Animation/Animation.swift",
-      "line": 72,
+      "line": 73,
       "symbol": "AnimationSequence.interval",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/mikehobizal/code/Animation/Animation/Animation.swift",
-      "line": 88,
+      "line": 89,
       "symbol": "AnimationSequence.start(completion:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/mikehobizal/code/Animation/Animation/Animation.swift",
-      "line": 94,
+      "line": 95,
       "symbol": "AnimationSequence.append(_:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/mikehobizal/code/Animation/Animation/Animation.swift",
-      "line": 98,
+      "line": 99,
       "symbol": "AnimationSequence.insert(_:at:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/mikehobizal/code/Animation/Animation/Animation.swift",
-      "line": 178,
+      "line": 179,
       "symbol": "AnimationStagger.animations",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/mikehobizal/code/Animation/Animation/Animation.swift",
-      "line": 179,
+      "line": 180,
       "symbol": "AnimationStagger.interval",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/mikehobizal/code/Animation/Animation/Animation.swift",
-      "line": 180,
+      "line": 181,
       "symbol": "AnimationStagger.delay",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/mikehobizal/code/Animation/Animation/Animation.swift",
-      "line": 182,
+      "line": 183,
       "symbol": "AnimationStagger.init(_:interval:delay:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/mikehobizal/code/Animation/Animation/Animation.swift",
-      "line": 191,
+      "line": 192,
       "symbol": "AnimationStagger.start(completion:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/mikehobizal/code/Animation/Animation/Animation.swift",
-      "line": 197,
+      "line": 198,
       "symbol": "AnimationStagger.append(_:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/mikehobizal/code/Animation/Animation/Animation.swift",
-      "line": 201,
+      "line": 202,
       "symbol": "AnimationStagger.insert(_:at:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/mikehobizal/code/Animation/Animation/Animation.swift",
-      "line": 205,
+      "line": 206,
       "symbol": "AnimationStagger.stagger(_:interval:startDelay:completion:)",
       "symbol_kind": "source.lang.swift.decl.function.method.static",
       "warning": "undocumented"
     },
     {
       "file": "/Users/mikehobizal/code/Animation/Animation/Animation.swift",
-      "line": 258,
+      "line": 259,
       "symbol": "AnimationParallel",
       "symbol_kind": "source.lang.swift.decl.struct",
       "warning": "undocumented"
     },
     {
       "file": "/Users/mikehobizal/code/Animation/Animation/Animation.swift",
-      "line": 259,
+      "line": 260,
       "symbol": "AnimationParallel.animations",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/mikehobizal/code/Animation/Animation/Animation.swift",
-      "line": 260,
+      "line": 261,
       "symbol": "AnimationParallel.delay",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/mikehobizal/code/Animation/Animation/Animation.swift",
-      "line": 262,
+      "line": 263,
       "symbol": "AnimationParallel.init(_:delay:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/mikehobizal/code/Animation/Animation/Animation.swift",
-      "line": 269,
+      "line": 270,
       "symbol": "AnimationParallel.start(completion:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/mikehobizal/code/Animation/Animation/Animation.swift",
-      "line": 275,
+      "line": 276,
       "symbol": "AnimationParallel.append(_:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/mikehobizal/code/Animation/Animation/Animation.swift",
-      "line": 279,
+      "line": 280,
       "symbol": "AnimationParallel.insert(_:at:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/mikehobizal/code/Animation/Animation/Animation.swift",
-      "line": 283,
+      "line": 284,
       "symbol": "AnimationParallel.parallel(_:startDelay:completion:)",
       "symbol_kind": "source.lang.swift.decl.function.method.static",
       "warning": "undocumented"
     },
     {
       "file": "/Users/mikehobizal/code/Animation/Animation/Animation.swift",
-      "line": 329,
+      "line": 330,
       "symbol": "Collection.get(at:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/mikehobizal/code/Animation/Animation/Animation.swift",
-      "line": 337,
+      "line": 338,
       "symbol": "CAMediaTimingFunction.easeInSine",
       "symbol_kind": "source.lang.swift.decl.var.static",
       "warning": "undocumented"
     },
     {
       "file": "/Users/mikehobizal/code/Animation/Animation/Animation.swift",
-      "line": 338,
+      "line": 339,
       "symbol": "CAMediaTimingFunction.easeOutSine",
       "symbol_kind": "source.lang.swift.decl.var.static",
       "warning": "undocumented"
     },
     {
       "file": "/Users/mikehobizal/code/Animation/Animation/Animation.swift",
-      "line": 339,
+      "line": 340,
       "symbol": "CAMediaTimingFunction.easeInOutSine",
       "symbol_kind": "source.lang.swift.decl.var.static",
       "warning": "undocumented"
     },
     {
       "file": "/Users/mikehobizal/code/Animation/Animation/Animation.swift",
-      "line": 340,
+      "line": 341,
       "symbol": "CAMediaTimingFunction.easeInQuad",
       "symbol_kind": "source.lang.swift.decl.var.static",
       "warning": "undocumented"
     },
     {
       "file": "/Users/mikehobizal/code/Animation/Animation/Animation.swift",
-      "line": 341,
+      "line": 342,
       "symbol": "CAMediaTimingFunction.easeOutQuad",
       "symbol_kind": "source.lang.swift.decl.var.static",
       "warning": "undocumented"
     },
     {
       "file": "/Users/mikehobizal/code/Animation/Animation/Animation.swift",
-      "line": 342,
+      "line": 343,
       "symbol": "CAMediaTimingFunction.easeInOutQuad",
       "symbol_kind": "source.lang.swift.decl.var.static",
       "warning": "undocumented"
     },
     {
       "file": "/Users/mikehobizal/code/Animation/Animation/Animation.swift",
-      "line": 343,
+      "line": 344,
       "symbol": "CAMediaTimingFunction.easeInCubic",
       "symbol_kind": "source.lang.swift.decl.var.static",
       "warning": "undocumented"
     },
     {
       "file": "/Users/mikehobizal/code/Animation/Animation/Animation.swift",
-      "line": 344,
+      "line": 345,
       "symbol": "CAMediaTimingFunction.easeOutCubic",
       "symbol_kind": "source.lang.swift.decl.var.static",
       "warning": "undocumented"
     },
     {
       "file": "/Users/mikehobizal/code/Animation/Animation/Animation.swift",
-      "line": 345,
+      "line": 346,
       "symbol": "CAMediaTimingFunction.easeInOutCubic",
       "symbol_kind": "source.lang.swift.decl.var.static",
       "warning": "undocumented"
     },
     {
       "file": "/Users/mikehobizal/code/Animation/Animation/Animation.swift",
-      "line": 346,
+      "line": 347,
       "symbol": "CAMediaTimingFunction.easeInQuart",
       "symbol_kind": "source.lang.swift.decl.var.static",
       "warning": "undocumented"
     },
     {
       "file": "/Users/mikehobizal/code/Animation/Animation/Animation.swift",
-      "line": 347,
+      "line": 348,
       "symbol": "CAMediaTimingFunction.easeOutQuart",
       "symbol_kind": "source.lang.swift.decl.var.static",
       "warning": "undocumented"
     },
     {
       "file": "/Users/mikehobizal/code/Animation/Animation/Animation.swift",
-      "line": 348,
+      "line": 349,
       "symbol": "CAMediaTimingFunction.easeInOutQuart",
       "symbol_kind": "source.lang.swift.decl.var.static",
       "warning": "undocumented"
     },
     {
       "file": "/Users/mikehobizal/code/Animation/Animation/Animation.swift",
-      "line": 349,
+      "line": 350,
       "symbol": "CAMediaTimingFunction.easeInQuint",
       "symbol_kind": "source.lang.swift.decl.var.static",
       "warning": "undocumented"
     },
     {
       "file": "/Users/mikehobizal/code/Animation/Animation/Animation.swift",
-      "line": 350,
+      "line": 351,
       "symbol": "CAMediaTimingFunction.easeOutQuint",
       "symbol_kind": "source.lang.swift.decl.var.static",
       "warning": "undocumented"
     },
     {
       "file": "/Users/mikehobizal/code/Animation/Animation/Animation.swift",
-      "line": 351,
+      "line": 352,
       "symbol": "CAMediaTimingFunction.easeInOutQuint",
       "symbol_kind": "source.lang.swift.decl.var.static",
       "warning": "undocumented"
     },
     {
       "file": "/Users/mikehobizal/code/Animation/Animation/Animation.swift",
-      "line": 352,
+      "line": 353,
       "symbol": "CAMediaTimingFunction.easeInExpo",
       "symbol_kind": "source.lang.swift.decl.var.static",
       "warning": "undocumented"
     },
     {
       "file": "/Users/mikehobizal/code/Animation/Animation/Animation.swift",
-      "line": 353,
+      "line": 354,
       "symbol": "CAMediaTimingFunction.easeOutExpo",
       "symbol_kind": "source.lang.swift.decl.var.static",
       "warning": "undocumented"
     },
     {
       "file": "/Users/mikehobizal/code/Animation/Animation/Animation.swift",
-      "line": 354,
+      "line": 355,
       "symbol": "CAMediaTimingFunction.easeInOutExpo",
       "symbol_kind": "source.lang.swift.decl.var.static",
       "warning": "undocumented"
     },
     {
       "file": "/Users/mikehobizal/code/Animation/Animation/Animation.swift",
-      "line": 355,
+      "line": 356,
       "symbol": "CAMediaTimingFunction.easeInCirc",
       "symbol_kind": "source.lang.swift.decl.var.static",
       "warning": "undocumented"
     },
     {
       "file": "/Users/mikehobizal/code/Animation/Animation/Animation.swift",
-      "line": 356,
+      "line": 357,
       "symbol": "CAMediaTimingFunction.easeOutCirc",
       "symbol_kind": "source.lang.swift.decl.var.static",
       "warning": "undocumented"
     },
     {
       "file": "/Users/mikehobizal/code/Animation/Animation/Animation.swift",
-      "line": 357,
+      "line": 358,
       "symbol": "CAMediaTimingFunction.easeInOutCirc",
       "symbol_kind": "source.lang.swift.decl.var.static",
       "warning": "undocumented"
     },
     {
       "file": "/Users/mikehobizal/code/Animation/Animation/Animation.swift",
-      "line": 358,
+      "line": 359,
       "symbol": "CAMediaTimingFunction.easeInBack",
       "symbol_kind": "source.lang.swift.decl.var.static",
       "warning": "undocumented"
     },
     {
       "file": "/Users/mikehobizal/code/Animation/Animation/Animation.swift",
-      "line": 359,
+      "line": 360,
       "symbol": "CAMediaTimingFunction.easeOutBack",
       "symbol_kind": "source.lang.swift.decl.var.static",
       "warning": "undocumented"
     },
     {
       "file": "/Users/mikehobizal/code/Animation/Animation/Animation.swift",
-      "line": 360,
+      "line": 361,
       "symbol": "CAMediaTimingFunction.easeInOutBack",
       "symbol_kind": "source.lang.swift.decl.var.static",
       "warning": "undocumented"
