@@ -11,13 +11,18 @@ typealias AnimationBlock = () -> Void
 /// Animation Protocol
 protocol AnimationProtocol {}
 
-/// Animation
 struct Animation: AnimationProtocol {
     var animation: AnimationBlock
     var duration: TimeInterval
     var delay: TimeInterval?
     var easing: CAMediaTimingFunction
 
+    /// Animation
+    /// - Parameters:
+    ///   - animation: An executable block of code to be animated
+    ///   - duration: The duration of the animation
+    ///   - delay: The delay of the animation
+    ///   - easing: The easing of the animation
     init(
         _ animation: @escaping AnimationBlock,
         duration: TimeInterval,
@@ -29,6 +34,8 @@ struct Animation: AnimationProtocol {
         self.easing = easing
     }
 
+    /// Method to fire animation
+    /// - Parameter completion: Animation completion, returns a boolean value if the animation succeeded
     public func start(completion: ((Bool) -> Void)? = nil) {
         CATransaction.begin()
         CATransaction.setAnimationTimingFunction(easing)
@@ -50,6 +57,9 @@ struct Animation: AnimationProtocol {
 struct AnimationWait: AnimationProtocol {
     var duration: TimeInterval
 
+    /// Wait
+    /// Executes no Animation, allows for timelines to be manipulated to avoid delays.
+    /// - Parameter duration: Time to wait
     init(_ duration: TimeInterval) {
         self.duration = duration
     }
@@ -61,6 +71,11 @@ struct AnimationSequence: AnimationProtocol {
     var delay: TimeInterval
     var interval: TimeInterval
 
+    /// Sequence
+    /// - Parameters:
+    ///   - animations: An array of executable AnimationProtocols
+    ///   - interval: The interval time between each sequenced Animation
+    ///   - delay: The delay to start the Sequence
     init(
         _ animations: [AnimationProtocol],
         interval: TimeInterval = 0,
@@ -84,7 +99,8 @@ struct AnimationSequence: AnimationProtocol {
         animations.insert(newElement, at: index)
     }
 
-    static func sequence(
+    /// Private sequence method
+    private static func sequence(
         _ blocks: [AnimationProtocol],
         startDelay: TimeInterval = 0,
         completion: (() -> Void)? = nil) {
