@@ -6,13 +6,13 @@
 import UIKit
 
 /// Animation Executable
-typealias AnimationBlock = () -> Void
+public typealias AnimationBlock = () -> Void
 
 /// Animation Protocol
-protocol AnimationProtocol {}
+public protocol AnimationProtocol {}
 
 /// Animation
-struct Animation: AnimationProtocol {
+public struct Animation: AnimationProtocol {
     var animation: AnimationBlock
     var duration: TimeInterval
     var delay: TimeInterval?
@@ -55,7 +55,7 @@ struct Animation: AnimationProtocol {
 }
 
 /// Animation Wait
-struct AnimationWait: AnimationProtocol {
+public struct AnimationWait: AnimationProtocol {
     var duration: TimeInterval
 
     /// Wait
@@ -67,7 +67,7 @@ struct AnimationWait: AnimationProtocol {
 }
 
 /// Animation Sequence
-struct AnimationSequence: AnimationProtocol {
+public struct AnimationSequence: AnimationProtocol {
     public var animations: [AnimationProtocol]
     var delay: TimeInterval
     var interval: TimeInterval
@@ -175,7 +175,7 @@ struct AnimationSequence: AnimationProtocol {
 }
 
 /// Animation Stagger
-struct AnimationStagger: AnimationProtocol {
+public struct AnimationStagger: AnimationProtocol {
     var animations: [AnimationProtocol]
     var interval: TimeInterval
     var delay: TimeInterval?
@@ -256,7 +256,7 @@ struct AnimationStagger: AnimationProtocol {
     }
 }
 
-struct AnimationParallel: AnimationProtocol {
+public struct AnimationParallel: AnimationProtocol {
     var animations: [AnimationProtocol]
     var delay: TimeInterval
 
@@ -332,7 +332,7 @@ extension Collection {
     }
 }
 
-extension CAMediaTimingFunction {
+public extension CAMediaTimingFunction {
     /// CSS default ease
     static let ease = CAMediaTimingFunction(controlPoints: 0.17, 0.67, 0.83, 0.67)
     static let easeInSine = CAMediaTimingFunction(controlPoints: 0.47, 0, 0.745, 0.715)
