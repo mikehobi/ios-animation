@@ -86,21 +86,33 @@ public struct AnimationSequence: AnimationProtocol {
         self.interval = interval
     }
 
+    /// Method to fire off sequence
+    /// - Parameter completion: Seqeunce completion
     public func start(completion: ((Bool) -> Void)? = nil) {
         AnimationSequence.sequence(animations, startDelay: delay) {
             completion?(true)
         }
     }
 
-    mutating func append(_ newElement: AnimationProtocol) {
-        animations.append(newElement)
+    /// Appends an animation block to the end of the sequence
+    /// - Parameter animation: AnimationProtocol to be added
+    mutating func append(_ animation: AnimationProtocol) {
+        animations.append(animation)
     }
 
-    mutating func insert(_ newElement: AnimationProtocol, at index: Int) {
-        animations.insert(newElement, at: index)
+    /// Inserts an animation block to the end of the sequence
+    /// - Parameters:
+    ///   - animation: AnimationProtocol to be added
+    ///   - index: Index in sequence for Animation to be added
+    mutating func insert(_ animation: AnimationProtocol, at index: Int) {
+        animations.insert(animation, at: index)
     }
 
     /// Private sequence method
+    /// - Parameters:
+    ///   - blocks: AnimationProtocol
+    ///   - startDelay: Delay duration of sequence
+    ///   - completion: Completion block fired at end of sequence
     private static func sequence(
         _ blocks: [AnimationProtocol],
         startDelay: TimeInterval = 0,
@@ -180,6 +192,15 @@ public struct AnimationStagger: AnimationProtocol {
     var interval: TimeInterval
     var delay: TimeInterval?
 
+    /// An array of animations that is fired one after the other with a defined staggered interval
+    ///
+    /// Note: It's not advised to use `AnimationStagger` with a `0.0` duration interval.
+    /// Use for `Animation.Sequence` for more reliability.
+    ///
+    /// - Parameters:
+    ///   - animations: Ordered array of animations to be fired
+    ///   - interval: Interval between firing of each animation
+    ///   - delay: Delay duration for the entire stagger sequence
     init(
         _ animations: [AnimationProtocol],
         interval: TimeInterval = 0,
@@ -189,21 +210,35 @@ public struct AnimationStagger: AnimationProtocol {
         self.delay = delay
     }
 
+    /// Method to fire off stagger sequence
+    /// - Parameter completion: Stagger sequence completion
     public func start(completion: ((Bool) -> Void)? = nil) {
         AnimationStagger.stagger(animations, interval: interval) {
             completion?(true)
         }
     }
 
-    mutating func append(_ newElement: AnimationProtocol) {
-        animations.append(newElement)
+    /// Appends an animation block to the end of the sequence
+    /// - Parameter animation: AnimationProtocol to be added
+    mutating func append(_ animation: AnimationProtocol) {
+        animations.append(animation)
     }
 
-    mutating func insert(_ newElement: AnimationProtocol, at index: Int) {
-        animations.insert(newElement, at: index)
+    /// Inserts an animation block to the end of the sequence
+    /// - Parameters:
+    ///   - animation: AnimationProtocol to be added
+    ///   - index: Index in sequence for Animation to be added
+    mutating func insert(_ animation: AnimationProtocol, at index: Int) {
+        animations.insert(animation, at: index)
     }
 
-    static func stagger(
+    /// Private stagger method
+    /// - Parameters:
+    ///   - blocks: AnimationProtocol
+    ///   - interval: Interval until next animation is fired
+    ///   - startDelay: Delay duration of sequence
+    ///   - completion: Completion block fired at end of sequence
+    private static func stagger(
         _ blocks: [AnimationProtocol],
         interval: TimeInterval,
         startDelay: TimeInterval = 0,
@@ -256,10 +291,15 @@ public struct AnimationStagger: AnimationProtocol {
     }
 }
 
+/// Animation Parallel
 public struct AnimationParallel: AnimationProtocol {
     var animations: [AnimationProtocol]
     var delay: TimeInterval
 
+    /// An array of animations that are started in parallel
+    /// - Parameters:
+    ///   - animations: Array of animations
+    ///   - delay: Delay to start parallel
     init(
         _ animations: [AnimationProtocol],
         delay: TimeInterval = 0) {
@@ -267,18 +307,26 @@ public struct AnimationParallel: AnimationProtocol {
         self.delay = delay
     }
 
+    /// Method to fire off parallel animation
+    /// - Parameter completion: Parallel animation completion
     public func start(completion: ((Bool) -> Void)? = nil) {
         AnimationParallel.parallel(animations, startDelay: delay) {
             completion?(true)
         }
     }
 
-    mutating func append(_ newElement: AnimationProtocol) {
-        animations.append(newElement)
+    /// Appends an animation block to the end of the sequence
+    /// - Parameter animation: AnimationProtocol to be added
+    mutating func append(_ animation: AnimationProtocol) {
+        animations.append(animation)
     }
 
-    mutating func insert(_ newElement: AnimationProtocol, at index: Int) {
-        animations.insert(newElement, at: index)
+    /// Inserts an animation block to the end of the sequence
+    /// - Parameters:
+    ///   - animation: AnimationProtocol to be added
+    ///   - index: Index in sequence for Animation to be added
+    mutating func insert(_ animation: AnimationProtocol, at index: Int) {
+        animations.insert(animation, at: index)
     }
 
     static func parallel(
