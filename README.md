@@ -4,6 +4,43 @@ A bunch of helper functions for animating in Swift. The goal of this helper is t
 
 ## Features
 
+### Animation Block
+
+The smallest building block of composing our animations. Essentially a clone of `UIView.animate` with a friendly parameter for easing.
+
+```swift
+Animation({
+    self.firstView.alpha = 1
+}, duration: 0.4, delay: 0.2, easing: .easeInOutQuad)
+```
+
+It can be used independently by calling `.start()`
+
+```swift
+Animation({
+    self.firstView.alpha = 1
+}, duration: 0.4, delay: 0.2, easing: .easeInOutQuad).start()
+```
+
+Or it can be stored in a variable for later usage
+
+```swift
+// Stored
+let myAnimation = Animation({
+    self.firstView.alpha = 1
+}, duration: 0.4, delay: 0.2, easing: .easeInOutQuad)
+
+// Later
+myAnimation.start()
+
+// Composed
+Animation.Sequence([
+    // ... preceding animations ...
+    myAnimation,
+    // ... succeding animations ...
+]).start()
+```
+
 ### Sequence Animations
 
 ##### Before
@@ -46,6 +83,8 @@ Animation.Sequence([
 
 ##### Before
 
+Notice the incrementing delays, this can be hard to keep track, especially with more fine-tuned values.
+
 ```swift
 UIView.animate(withDuration: 0.4, animations: {
     self.firstView.alpha = 1
@@ -62,6 +101,8 @@ UIView.animate(withDuration: 0.4, delay: 0.75, animations: {
 ```
 
 ##### After
+
+Each animation will fire `0.25` seconds after it's predecessor has animated.
 
 ```swift
 Animation.Stagger([
